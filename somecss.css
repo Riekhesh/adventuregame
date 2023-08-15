@@ -4,14 +4,23 @@
     margin: 0 auto;
     width: 600px;
     font-family: 'Roboto Mono', monospace;
-    background-color: #1f1f1f;
   }
 
-#title {
+ * {
+    background-image: url("https://wallpaperaccess.com/full/174811.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+
+#title1 {
     font-family: 'Megrim', cursive !important;
+    width: auto;
+    text-align: center;
+
 }
 
-#intro p{
+#question0 p{
     font-family: 'Megrim', cursive !important;
 }
     
@@ -21,7 +30,7 @@ img {
     text-align: center;
 }
 
-#intro {
+#question0 {
     margin-top: 10px;
     margin-bottom: 30px;
 }
@@ -35,10 +44,10 @@ img {
     font-size: 70px;
 }
 
-#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8  {
+#question1, #question2, #question3, #question4, #question5, #question6, #question7, #question8, .questions  {
     margin-top: 10px;
     margin-bottom: 40px;
-    display: none;
+
 
 }
 
@@ -105,11 +114,11 @@ p {
     padding-bottom: 70px;
 }
 
-#endbutton {
+#nextbutton {
     width: 100px;
     text-align: center;
     float: right;
-    background-color: white;
+    background-color: white  !important; 
     color: #1f1f1f;
     font-weight: bold;
     margin: 20px;
@@ -117,7 +126,7 @@ p {
 
 }
 
-#endbutton:hover {
+#nextbutton:hover {
     background-color: lightgreen;
 }
 
@@ -125,7 +134,7 @@ p {
 
     text-align: center;
     display: none;
-    background-color: white;
+    background-color: white  !important;
     color: #1f1f1f;
     font-weight: bold;
     padding: 10px;
@@ -141,6 +150,40 @@ p {
     margin-bottom: 10px;
     margin-right: 0px;
     margin-left: 0px;
-    background-color: white;
+    background-color: white  !important;
     color: #1f1f1f;
 }
+
+#landingtitle {
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 75px;
+    margin-top: 200px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    width: 150px !important;
+    padding:10px;
+    margin-left: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#cardinfo {
+    margin-top: 55px;
+    display: none;
+}
+
+h1 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
