@@ -10,11 +10,29 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <script src="./adventurejava.js"></script>
         <script src="jquery.js"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
     </header>
-    <body>
+    <body>  
+
+        <div id = "landing">
+            <p id="landingtitle">The Enchanted Realm</p>
+            <p>
+                <svg id="startbutton" xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                  </svg>
+            </p>
+        </div>
         
-        <div id="intro">
-            <h1 id="title">The Enchanted Realm</h1>
+        <div>
+            <p class="card">Inventory </p>
+            <p id="cardinfo" class="card">Name: <br> Class: <br></p>
+        </div>
+
+
+        <h1 id="title1">The Enchanted Realm</h1>
+        <div id="question0" class="questions">
+            
                 <p>
                 In the mystical land of Eldoria, an ancient prophecy has resurface
                 foretelling the return of a legendary artifact known as the "Crystal
@@ -40,34 +58,34 @@
                 <p style= font-weight:bold >Press next to start your journey!</p>
         </div>
         <form>
-            <div id="question1">
+            <div id="question1" class="questions">
                 <p><i><strong>Welcome to the world of Eldoria</strong></i></p>
-                <label id="q1">1. What is your name, adventurer?</label>
+                <label for="q1">1. What is your name, adventurer?</label>
                 
                 <input id="q1" name="q1" type="text" required>
             </div>
                
             
                 
-            <div id="question2">
+            <div id="question2" class="questions">
                 <img src="https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_576/MTc0MTYyMDc5NDY3NDQ4MTg4/class-balance-and-archetypes-in-rpgs.webp">
                 <p id="q2">2. Pick your class:</p>
                  
                 <div class="html-input">
-                    <input name="q2" type="radio" required>
+                    <input name="q2" type="radio" id="class" value="Warrior" required>
                     <label>Warrior: Brute strength and combat skills.</label>
                 </div>
                 <div class="html-input">
-                    <input name="q2" type="radio" required>
+                    <input name="q2" type="radio" id="class" value="Mage" required>
                     <label>Mage: Master of arcane arts and spells.</label>
                 </div>
                 <div class="html-input">
-                    <input name="q2" type="radio" required>
+                    <input name="q2" type="radio" id="class" value="Rogue" required>
                     <label>Rogue: Stealthy and agile, skilled in deception.</label>
                 </div>
             </div>
             
-            <div id="question3">
+            <div id="question3" class="questions">
                 <img src="https://media.istockphoto.com/id/120094247/photo/spooky-wooden-planks-door-surrounded-by-vines-and-skeletons.jpg?s=612x612&w=0&k=20&c=UOEjZ44fEod-UtAgfzMuqOWEJaPSBZKsfU0PI6QTvVw=">
                 
                 <label for="q3">3. You come across a mysterious door, guarded by a riddle. Solve the riddle to proceed:
@@ -77,8 +95,17 @@
                     
                
             </div>
-            
-            <div id="question4">
+            <div id="altquestion1" class="questions">
+                <img src="https://media.istockphoto.com/id/931155784/photo/large-wooden-door-open-in-castle-wall.jpg?s=612x612&w=0&k=20&c=joDy_mdUGbEl07gdAhMEtSM0jQmId8e-QepEOfZgYoY=" width="600px">
+                <p>You got the riddle right! You easily get past the door and move on to the next area.</p>
+            </div>
+            <div id="altquestion2" class="questions">
+                <img src="https://i.redd.it/hexil2k420871.jpg" width="600px">
+                <p>You got the riddle wrong! The door remains closed. However you find a ladder and attempt to climb across, which you are successful in but you sustain damage to your legs.</p>
+            </div>
+
+
+            <div id="question4" class="questions">
                 <img src="https://i.quotev.com/catrrsvyaaaa.jpg">
                
                 <label for="q4">4. A magical creature blocks your path. How do you handle the situation?<br><br>
@@ -104,7 +131,7 @@
             </div>
             
             
-            <div id="question5">
+            <div id="question5" class="questions">
                 <img src="https://media.istockphoto.com/id/1126694555/photo/magic-wooden-box-with-glowing-light.jpg?s=612x612&w=0&k=20&c=F2kkH6U4ky_ZQ6P-eTQUA7VvHMBLpPojQLLItoz-e8g=">
                 <p>5. You find a chest with a magical lock. To open it, you must pick the correct two symbols. Here are the symbols:</p>
                 <div class="html-input2">
@@ -136,22 +163,22 @@
             <br>
             <br>                
             
-            <div id="question6">
+            <div id="question6" class="questions">
                 <img src="https://c4.wallpaperflare.com/wallpaper/428/265/139/forest-fantasy-art-the-elder-the-hermit-hd-wallpaper-preview.jpg">
                 <label for="q6">6. As you progress deeper into the forest, you encounter an old hermit who offers you a quest. Will you accept or decline the quest?</label>
                 
                 <div class="html-input">
-                    <input id="q6" name="choice" type="radio" required>
+                    <input id="q6" name="q6" type="radio" required>
                     <label for="q6">Accept</label>
                 </div>
                 <div class="html-input">
-                    <input id="q6" name="choice" type="radio" required>
+                    <input id="q6" name="q6" type="radio" required>
                     <label for="q6">Decline</label>
                 </div>
             </div>
 
             
-            <div id="question7">
+            <div id="question7" class="questions">
                 <img src="https://cdn.bhdw.net/im/long-road-ahead-wallpaper-78156_w635.webp">
                 <label>7. You still have a long way to go and need to find faster mode of transport, these are your options:<br><br>
                     <b>A.</b> Steal a horse and ride it <br>
@@ -179,7 +206,7 @@
             </div>
            
             
-            <div id="question8">
+            <div id="question8" class="questions">
                 <img src="https://cdnb.artstation.com/p/assets/covers/images/016/338/129/large/maria-shukailova-crystal.jpg?1551796001">
                 <label for="q8">8. The final confrontation awaits! You stand before the Crystal of Dreams. What is your choice?<br><br>
                     <b>A.</b> Take the crystal and wield its power.<br>
@@ -201,18 +228,20 @@
                     </div>
 
             </div>
+            <div id="question9" class="questions">
+                <p>Game Over!</p>
+                <input type="submit" id="submitButton" value="Submit">
+            </div>
             <div class='buttons'>
-                <div id="last">
-                    <p>Game Over!</p>
-                </div>
-            
-                <div id="end">
-                    <p id="endbutton">Next</p>
+              
+                <div>
+                    <input type="button" id="nextbutton" value="Next">
+
                     <input id="resetbutton" type="submit" value="Restart">
                 </div>
 
                 <div id="arrowkey">
-                    <p id="<"><</p>
+                    <p id="leftkey"><</p>
                     <p id="pagenum"></p>
                 </div>
 
