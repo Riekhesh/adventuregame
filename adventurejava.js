@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $("*").css("background-color", "#1f1f1f")
     $("*").not(".card").css("background-image", "none");
     $('#landing').hide()
-    $('#question0').fadeIn(1000)
-    $('.buttons').show()
+    $('#question0').fadeIn()
+    $('.buttons').fadeIn()
     $(".card").fadeIn()
     $('#title1').fadeIn();
   }
