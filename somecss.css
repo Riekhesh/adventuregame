@@ -51,9 +51,9 @@ img {
 
 }
 
-p {
+/* p {
     margin: 20px;
-}
+} */
 
 .html-input {
     overflow: hidden;
@@ -111,7 +111,7 @@ p {
 }
 
 #question5 {
-    padding-bottom: 69px;
+    padding-bottom: 70px;
 }
 
 #nextbutton {
@@ -187,3 +187,7 @@ h1 {
     position: sticky;
     top: 0;
   }
+
+.buttons {
+    display: none
+}
