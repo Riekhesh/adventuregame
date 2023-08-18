@@ -27,12 +27,6 @@
                   </svg>
             </p>
         </div>
-        
-        <!--<div>
-            <p class="card">Inventory </p>
-            <p id="cardinfo" class="card">Name: <br> Class: <br></p>
-        </div> -->
-
 
         <h1 id="title1">The Enchanted Realm</h1>
         <div id="question0" class="questions">
@@ -61,7 +55,7 @@
             <img src="https://img.freepik.com/premium-photo/fantasy-magical-path-through-enchanted-forest-trees-dreamy-wilderness-nature-night-mysterious-nat_124507-11280.jpg?w=740" width="800">
                 <p style= font-weight:bold >Press next to start your journey!</p>
         </div>
-        <form>
+        <form method="POST" action="adventuregamedb.php">
             <div id="question1" class="questions">
                 <p><i><strong>Welcome to the world of Eldoria</strong></i></p>
                 <label for="q1">1. What is your name, adventurer?</label>
@@ -76,16 +70,16 @@
                 <p id="q2">2. Pick your class:</p>
                  
                 <div class="html-input">
-                    <input name="q2" type="radio" id="class" value="Warrior" required>
-                    <label>Warrior: Brute strength and combat skills.</label>
+                    <input name="q2" type="radio" id="q2" value="Warrior" required>
+                    <label for="q2">Warrior: Brute strength and combat skills.</label>
                 </div>
                 <div class="html-input">
-                    <input name="q2" type="radio" id="class" value="Mage" required>
-                    <label>Mage: Master of arcane arts and spells.</label>
+                    <input name="q2" type="radio" id="q2" value="Mage" required>
+                    <label for="q2">Mage: Master of arcane arts and spells.</label>
                 </div>
                 <div class="html-input">
-                    <input name="q2" type="radio" id="class" value="Rogue" required>
-                    <label>Rogue: Stealthy and agile, skilled in deception.</label>
+                    <input name="q2" type="radio" id="q2" value="Rogue" required>
+                    <label for="q2">Rogue: Stealthy and agile, skilled in deception.</label>
                 </div>
             </div>
             
@@ -121,15 +115,15 @@
                     Pick either A,B or C
                 </label>
                 <div class="html-input">
-                    <input id="q4" name="q4" type="radio" required>
+                    <input id="q4" name="q4" type="radio" value="A">
                     <label for="q4">A</label>
                 </div>
                 <div class="html-input">
-                    <input id="q4" name="q4" type="radio" required>
+                    <input id="q4" name="q4" type="radio" value="B">
                     <label for="q4">B</label>
                 </div>
                 <div class="html-input">
-                    <input id="q4" name="q4" type="radio" required>
+                    <input id="q4" name="q4" type="radio" value="C">
                     <label for="q4">C</label>  
                 </div>             
             </div>
@@ -139,28 +133,28 @@
                 <img src="https://media.istockphoto.com/id/1126694555/photo/magic-wooden-box-with-glowing-light.jpg?s=612x612&w=0&k=20&c=F2kkH6U4ky_ZQ6P-eTQUA7VvHMBLpPojQLLItoz-e8g=">
                 <p>5. You find a chest with a magical lock. To open it, you must pick the correct symbol(s). Here are the symbols:</p>
                 <div class="html-input2">
-                    <input id="moon" name="q5" type="checkbox" value="moon">
-                    <label for="moon">Moon</label>
+                    <input id="q5" name="q5" type="checkbox" value="moon">
+                    <label for="q5">Moon</label>
                     
                 </div>
                 <div class="html-input2">
-                    <input id="sun" name="q5" type="checkbox" value="sun">
-                    <label for="sun">Sun</label>
+                    <input id="q5" name="q5" type="checkbox" value="sun">
+                    <label for="q5">Sun</label>
                     
                 </div>
                 <div class="html-input2">
-                    <input id="star" name="q5" type="checkbox" value="star">
-                    <label for="star">Star</label>
+                    <input id="q5" name="q5" type="checkbox" value="star">
+                    <label for="q5">Star</label>
                     
                 </div>
                 <div class="html-input2">
-                    <input id="heart" name="q5" type="checkbox" value="heart">
-                    <label for="heart">Heart</label>
+                    <input id="q5" name="q5" type="checkbox" value="heart">
+                    <label for="q5">Heart</label>
                     
                 </div>
                 <div class="html-input2">
-                    <input id="sword" name="q5" type="checkbox" value="sword">
-                    <label for="sword">Sword</label>
+                    <input id="q5" name="q5" type="checkbox" value="sword">
+                    <label for="q5">Sword</label>
                     
                 </div>
             </div>
@@ -204,19 +198,19 @@
                     Pick between A,B,C or D
                 </label>
                     <div class="html-input">
-                        <input id="q7" name="q7" type="radio" required>
+                        <input id="q7" name="q7" type="radio" value="A">
                         <label for="q7">A</label>
                     </div>
                     <div class="html-input">
-                        <input id="q7" name="q7" type="radio" required>
+                        <input id="q7" name="q7" type="radio" value="B">
                         <label for="q7">B</label>
                     </div>
                     <div class="html-input">
-                        <input id="q7" name="q7" type="radio" required>
+                        <input id="q7" name="q7" type="radio" value="C">
                         <label for="q7">C</label>
                     </div>
                         <div class="html-input">
-                        <input id="q7" name="q7" type="radio" required>
+                        <input id="q7" name="q7" type="radio" value="D">
                         <label for="q7">D</label>
                     </div>
             </div>
@@ -231,18 +225,30 @@
                     Pick either A,B or C
                 </label>
                     <div class="html-input">
-                        <input id="q8" name="q8" type="radio" required>
+                        <input id="q8" name="q8" type="radio" value="A">
                         <label for="q8">A</label>
                     </div>
                     <div class="html-input">
-                        <input id="q8" name="q8" type="radio" required>
+                        <input id="q8" name="q8" type="radio" value="B">
                         <label for="q8">B</label>
                     </div>
                     <div class="html-input">
-                        <input id="q8" name="q8" type="radio" required>
+                        <input id="q8" name="q8" type="radio" value="C">
                         <label for="q8">C</label>
                     </div>
 
+            </div>
+            <div id="altquestion81" class="questions">
+                <img src="https://olanaturalhealing.com/wp-content/uploads/2016/02/The-human-energy-field-Version-2.jpg">
+                <p>You absorb the crystal's power, making you obtain an unimaginable amount of strength</p>
+            </div>
+            <div id="altquestion82" class="questions">
+                <img src="https://us.123rf.com/450wm/pegasustudio/pegasustudio2004/pegasustudio200400205/145696595-magic-crystal-ball-in-a-mystical-emerald-radiance.jpg?ver=6">
+                <p>You keep the crystal protected in your possession preventing it from falling into the wrong hands.</p>
+            </div>
+            <div id="altquestion83" class="questions">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/772847518069441016/9F3A85C97F4B30240201287F18ED45CD7C1F9868/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+                <p>You destroy the crystal releasing a deadly blast destroying everything in its way including you...</p>
             </div>
             <div id="question9" class="questions">
                 <p>Game Over!</p>
@@ -253,7 +259,7 @@
                 <div>
                     <input type="button" id="nextbutton" value="Next">
 
-                    <input id="resetbutton" type="submit" value="Restart">
+                    <input id="resetbutton" name="submit" type="submit" value="submit">
                 </div>
 
                 <div id="arrowkey">
