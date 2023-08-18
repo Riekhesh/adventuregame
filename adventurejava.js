@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", function() {
       factor1 = false
     } else if (pagenumber == 4 && !$('input[name=q4]:checked').val()) {
       alert("Please do not leave it blank")
+    } else if (pagenumber == 4 && $('input[name=q4]:checked').val() == "C" && $('input[name=q2]:checked').val() != "Mage") {
+      alert("You are not a Mage! Please pick another option")
     } else if (pagenumber == 5 && !$('input[name=q5]:checked').val()) {
       alert("Please do not leave it blank")
     } else if (pagenumber == 5 && $('input[name=q5]:checked').val() == "moon" && factor2 == true ) {
@@ -70,6 +72,10 @@ document.addEventListener("DOMContentLoaded", function() {
       factor3 = false
     } else if (pagenumber == 7 && !$('input[name=q7]:checked').val()) {
       alert("Please do not leave it blank")
+    } else if (pagenumber == 7 && $('input[name=q7]:checked').val() == "D" && $('input[name=q6]:checked').val() == "decline") {
+      alert("You do not have the magical book, please pick another option")
+    } else if (pagenumber == 7 && $('input[name=q7]:checked').val() == "B" && $('input[name=q3]:checked').val() != "echo") {
+      alert("You are injured, please pick another option")
     } else if (pagenumber == 8 && !$('input[name=q8]:checked').val()) {
       alert("Please do not leave it blank")
     } else if (pagenumber == 8 && $('input[name=q8]:checked').val() == "A" && factor4 == true ) {
