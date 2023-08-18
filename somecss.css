@@ -51,6 +51,9 @@ img {
 
 }
 
+/* p {
+    margin: 20px;
+} */
 
 .html-input {
     overflow: hidden;
@@ -118,8 +121,8 @@ img {
     background-color: white  !important; 
     color: #1f1f1f;
     font-weight: bold;
-    margin: 20px;
     margin-right:5px;
+
 
 }
 
