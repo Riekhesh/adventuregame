@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let factor1 = true
   let factor2 = true
   let factor3 = true
+  let factor4 = true
   
   // next button
   let nextbutton = () => {
@@ -71,6 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Please do not leave it blank")
     } else if (pagenumber == 8 && !$('input[name=q8]:checked').val()) {
       alert("Please do not leave it blank")
+    } else if (pagenumber == 8 && $('input[name=q8]:checked').val() == "A" && factor4 == true ) {
+      $('.questions').hide()
+      $('#altquestion81').show()
+      // runs only once
+      factor4 = false
+    } else if (pagenumber == 8 && $('input[name=q8]:checked').val() == "B" && factor4 == true ) {
+      $('.questions').hide()
+      $('#altquestion82').show()
+      // runs only once
+      factor4 = false
+    } else if (pagenumber == 8 && $('input[name=q8]:checked').val() == "C" && factor4 == true ) {
+      $('.questions').hide()
+      $('#altquestion83').show()
+      // runs only once
+      factor4 = false
     } else if (pagenumber == 9) {
       $(".buttons").hide()
       next.removeEventListener("click", nextbutton);
